@@ -1,6 +1,10 @@
 pipeline {
     agent any
 
+    tools {
+        maven 'Maven-3.8.4'
+    }
+
     environment {
         GITHUB_ORG = 'timursamanchi'
         CONTAINER_REG = "ghcr.io/${GITHUB_ORG}/"
