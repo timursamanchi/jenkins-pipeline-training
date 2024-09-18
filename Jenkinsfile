@@ -2,7 +2,7 @@ pipeline {
     agent any
 
     environment {
-        GITHUB_ORG = 'https://github.com/timursamanchi'
+        GITHUB_ORG = 'timursamanchi'
         CONTAINER_REGISTRY = "ghcr.io/${GITHUB_ORG}/"
         ARTIFACT_ID = readMavenPom().getArtifactId()
         JAR_NAME = "${ARTIFACT_ID}-${BUILD_NUMBER}"
