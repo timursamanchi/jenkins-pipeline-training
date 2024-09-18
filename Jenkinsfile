@@ -4,7 +4,7 @@ pipeline {
     environment {
         GITHUB_ORG = 'timursamanchi'
         CONTAINER_REG = "ghcr.io/${GITHUB_ORG}/"
-        ARTIFACT_ID = "readMavenPom().getArtifactId()"
+        ARTIFACT_ID = readMavenPom().getArtifactId()
     }
 
     stages {
