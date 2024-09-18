@@ -22,7 +22,7 @@ pipeline {
 
         stage ('Publishing Containe Image') {
             steps {
-                sh 'echo Publishing COntainer Image : '
+                sh 'echo Publishing COntainer Image : ${ARTIFACT_ID}'
             }
         }
     }
